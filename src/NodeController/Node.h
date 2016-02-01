@@ -16,7 +16,7 @@ private:
 public:
 	Node();
 	Node(Type value);
-
+	~Node();
 	Type getValue();
 	void setValue(Type value);
 	Node * getPointers();
