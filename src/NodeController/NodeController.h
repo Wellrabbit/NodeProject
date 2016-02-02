@@ -7,11 +7,12 @@
 
 #ifndef NODECONTROLLER_NODECONTROLLER_H_
 #define NODECONTROLLER_NODECONTROLLER_H_
-#include "Node.h"
-#include "Node.cpp"
 #include <string>
-#include "ArrayNode.cpp"
-#include "ArrayNode.h"
+
+#include "../NodeModel/ArrayNode.cpp"
+#include "../NodeModel/ArrayNode.h"
+#include "../NodeModel/Node.cpp"
+#include "../NodeModel/Node.h"
 using namespace std;
 
 class NodeController {

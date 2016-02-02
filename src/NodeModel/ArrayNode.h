@@ -5,10 +5,10 @@
  *      Author: eort3611
  */
 
-#ifndef NODECONTROLLER_ARRAYNODE_H_
-#define NODECONTROLLER_ARRAYNODE_H_
+#ifndef NODEMODEL_ARRAYNODE_H_
+#define NODEMODEL_ARRAYNODE_H_
 
-#include "Node.h"
+#include "../NodeModel/Node.h"
 template <class Type>
 class ArrayNode: public Node<Type>
 {
@@ -23,4 +23,4 @@ public:
 	void setNext(ArrayNode * next);
 };
 
-#endif /* NODECONTROLLER_ARRAYNODE_H_ */
+#endif /* NODEMODEL_ARRAYNODE_H_ */

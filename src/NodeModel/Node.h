@@ -5,8 +5,8 @@
  *      Author: eort3611
  */
 
-#ifndef NODECONTROLLER_NODE_H_
-#define NODECONTROLLER_NODE_H_
+#ifndef NODEMODEL_NODE_H_
+#define NODEMODEL_NODE_H_
 
 template <class Type>
 class Node {
@@ -23,4 +23,4 @@ public:
 
 };
 
-#endif /* NODECONTROLLER_NODE_H_ */
+#endif /* NODEMODEL_NODE_H_ */

@@ -5,7 +5,8 @@
  *      Author: eort3611
  */
 
-#include "ArrayNode.h"
+#include "../NodeModel/ArrayNode.h"
+
 #include <iostream>
 template <class Type>
 ArrayNode<Type>::ArrayNode() : Node<Type>()
@@ -40,5 +41,5 @@ ArrayNode<Type> * ArrayNode<Type> :: getNext()
 template <class Type>
 void ArrayNode<Type> :: setNext(ArrayNode<Type> * next)
 {
-	this->next = next;
+	 this->next = next;
 }

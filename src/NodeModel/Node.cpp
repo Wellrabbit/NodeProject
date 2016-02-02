@@ -5,7 +5,8 @@
  *      Author: eort3611
  */
 
-#include "Node.h"
+#include "../NodeModel/Node.h"
+
 #include <iostream>
 
 template <class Type>
