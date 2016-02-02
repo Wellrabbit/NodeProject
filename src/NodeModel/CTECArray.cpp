@@ -7,12 +7,31 @@
 
 #include "CTECArray.h"
 
-CTECArray::CTECArray() {
-	// TODO Auto-generated constructor stub
+template <class Type>
+CTECArray<Type>::CTECArray(int size)
+{
+	this->size = size;
 
 }
-
-CTECArray::~CTECArray() {
+template <class Type>
+CTECArray<Type>::~CTECArray() {
 	// TODO Auto-generated destructor stub
 }
 
+template <class Type>
+int CTECArray<Type> :: getSize()
+{
+	return size;
+}
+
+template <class Type>
+void CTECArray<Type> :: set(int position, Type value)
+{
+
+}
+
+template <class Type>
+Type* CTECArray<Type> :: get(int position)
+{
+
+}
