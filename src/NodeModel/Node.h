@@ -15,7 +15,7 @@ private:
 	Node * pointers;
 public:
 	Node();
-	Node(Type value);
+	Node(const Type& value);
 	~Node();
 	Type getValue();
 	void setValue(const Type& value);

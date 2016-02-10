@@ -9,22 +9,32 @@
 #include <iostream>
 using namespace std;
 
-NodeController::NodeController() {
+NodeController::NodeController()
+{
 
-stringNode.setValue("asdsads");
-intNode.setValue(999);
-stringArrayNode.setValue("Words");
-otherArrayNode.setValue("Link");
-stringArrayNode.setNext(&otherArrayNode);
+//stringNode.setValue("asdsads");
+//intNode.setValue(999);
+//stringArrayNode.setValue("Words");
+//otherArrayNode.setValue("Link");
+//stringArrayNode.setNext(&otherArrayNode);
+	notHipsterEnough = new CTECArray<int>(5);
 }
 
-NodeController::~NodeController() {
+NodeController::~NodeController()
+{
 	// TODO Auto-generated destructor stub
 }
 
-void NodeController :: start()
+void NodeController::start()
 {
-cout << stringNode.getValue() << endl;
-cout << stringArrayNode.getValue() << endl;
+	for (int index = 0; index < notHipsterEnough->getSize(); index++)
+	{
+		notHipsterEnough->set(index, (index * 7));
+	}
 
+	for (int index = notHipsterEnough->getSize() - 1; index >= 0; index--)
+	{
+		cout << "The spot is" << index << "And the place is"
+				<< notHipsterEnough->get(index) << endl;
+	}
 }

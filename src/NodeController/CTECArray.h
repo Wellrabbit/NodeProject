@@ -5,9 +5,9 @@
  *      Author: eort3611
  */
 
-#ifndef NODEMODEL_CTECARRAY_H_
-#define NODEMODEL_CTECARRAY_H_
-#include "ArrayNode.h"
+#ifndef NODECONTROLLER_CTECARRAY_H_
+#define NODECONTROLLER_CTECARRAY_H_
+#include "../NodeModel/ArrayNode.h"
 template <class Type>
 class CTECArray {
 private:
@@ -22,4 +22,4 @@ public:
 
 };
 
-#endif /* NODEMODEL_CTECARRAY_H_ */
+#endif /* NODECONTROLLER_CTECARRAY_H_ */

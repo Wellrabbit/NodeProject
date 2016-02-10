@@ -4,14 +4,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/NodeController/CTECArray.cpp \
 ../src/NodeController/NodeController.cpp \
 ../src/NodeController/Runner.cpp 
 
 OBJS += \
+./src/NodeController/CTECArray.o \
 ./src/NodeController/NodeController.o \
 ./src/NodeController/Runner.o 
 
 CPP_DEPS += \
+./src/NodeController/CTECArray.d \
 ./src/NodeController/NodeController.d \
 ./src/NodeController/Runner.d 
 

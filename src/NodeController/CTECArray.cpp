@@ -6,6 +6,7 @@
  */
 
 #include "CTECArray.h"
+
 #include <iostream>
 #include <assert.h>
 using namespace std;
@@ -62,13 +63,13 @@ int CTECArray<Type>::getSize()
 template<class Type>
 void CTECArray<Type>::set(int position, const Type& value)
 {
-	assert(position > size && position >= 0);
+	assert(position < size && position >= 0);
 		ArrayNode<Type> * current = head;
 		for (int spot = 0; spot < position; spot++)
 		{
 			if (spot != position)
 			{
-				current = current->next;
+				current = current->getNext();
 			}
 			else
 			{
@@ -81,18 +82,18 @@ void CTECArray<Type>::set(int position, const Type& value)
 template<class Type>
 Type CTECArray<Type>::get(int position)
 {
-	assert(position > size && position > -1);
+	assert(position < size && position > -1);
 		ArrayNode<Type> * current = head;
 		for(int spot = 0; spot <= position; spot++)
 		{
 			if(spot != position)
 			{
-				current = current->getNext;
+				current = current->getNext();
 			}
 			else
 			{
 				return current->getValue();
 			}
 		}
-	}
+
 }
