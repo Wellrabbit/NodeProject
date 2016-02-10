@@ -18,7 +18,7 @@ public:
 	Node(Type value);
 	~Node();
 	Type getValue();
-	void setValue(Type value);
+	void setValue(const Type& value);
 	Node * getPointers();
 
 };
