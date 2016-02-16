@@ -27,6 +27,7 @@ NodeController::~NodeController()
 
 void NodeController::start()
 {
+	arrayTimer.startTimer();
 	for (int index = 0; index < notHipsterEnough->getSize(); index++)
 	{
 		notHipsterEnough->set(index, (index * 7));
@@ -37,4 +38,6 @@ void NodeController::start()
 		cout << "The spot is" << index << "And the place is"
 				<< notHipsterEnough->get(index) << endl;
 	}
+	arrayTimer.stopTimer();
+	arrayTimer.displayTimerInfo();
 }

@@ -18,18 +18,18 @@ CTECArray<Type>::CTECArray(int size)
 	this->head = nullptr;
 
 	assert(size > 0);
-	for (int index = 0; index < size; index++)
+	for (int index = 0; index <= size; index++)
 	{
 		if (head != nullptr)
 		{
-			ArrayNode<Type> nextNode;
-			nextNode.setNext(head);
-			this->head = &nextNode;
+			ArrayNode<Type> * nextNode = new ArrayNode<Type>();
+			nextNode->setNext(head);
+			this->head = nextNode;
 		}
 		else
 		{
-			ArrayNode<Type> firstNode;
-			this->head = &firstNode;
+			ArrayNode<Type> * firstNode = new ArrayNode<Type>();
+			this->head = firstNode;
 		}
 	}
 }
@@ -65,7 +65,7 @@ void CTECArray<Type>::set(int position, const Type& value)
 {
 	assert(position < size && position >= 0);
 		ArrayNode<Type> * current = head;
-		for (int spot = 0; spot < position; spot++)
+		for (int spot = 0; spot <= position; spot++)
 		{
 			if (spot != position)
 			{

@@ -13,6 +13,7 @@
 #include "../NodeModel/ArrayNode.h"
 #include "../NodeModel/Node.cpp"
 #include "../NodeModel/Node.h"
+#include "../NodeModel/Timer.h"
 #include "CTECArray.h"
 #include "CTECArray.cpp"
 using namespace std;
@@ -24,6 +25,7 @@ private:
 	//ArrayNode<string> stringArrayNode;
 	//ArrayNode<string> otherArrayNode;
 	CTECArray<int> * notHipsterEnough;
+	Timer arrayTimer;
 public:
 	NodeController();
 	virtual ~NodeController();
