@@ -60,6 +60,9 @@ int CTECArray<Type>::getSize()
 	return size;
 }
 
+
+
+
 template<class Type>
 void CTECArray<Type>::set(int position, const Type& value)
 {

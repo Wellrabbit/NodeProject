@@ -8,6 +8,9 @@
 #ifndef NODEMODEL_CTECLISTS_H_
 #define NODEMODEL_CTECLISTS_H_
 #include "ArrayNode.h"
+#include <iostream>
+#include <assert.h>
+using namespace std;
 template <class Type>
 class CTECLists
 {
@@ -15,21 +18,21 @@ private:
 int size;
 ArrayNode<Type> head;
 ArrayNode<Type> end;
-void clacSize();
+void claculateSize();
 public:
 	CTECLists();
 	virtual ~CTECLists();
-	int getSize();
-	void addToFront(const Type& value);
-	void addToEnd(const Type& value);
 	void addAtIndex(int index, const Type& value);
-	Type getFront();
-	Type getEnd();
-	Type getFromIndex(int index);
+	void addToEnd(const Type& value);
+	void addToFront(const Type& value);\
 	Type removeFromFront();
-	Type removeFromEnd();
 	Type removeFromIndex(int index);
-	Type set(int index, const Type& value);
+	Type removeFromEnd();
+	Type getEnd();
+	Type getFront();
+	Type getFromIndex(int index);
+	Type set(int index, const Type& Value);
+	int getSize();
 
 };
 
