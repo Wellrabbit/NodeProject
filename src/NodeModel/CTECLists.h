@@ -16,8 +16,8 @@ class CTECLists
 {
 private:
 int size;
-ArrayNode<Type> head;
-ArrayNode<Type> end;
+ArrayNode<Type> * head;
+ArrayNode<Type> * end;
 void claculateSize();
 public:
 	CTECLists();
@@ -33,6 +33,7 @@ public:
 	Type getFromIndex(int index);
 	Type set(int index, const Type& Value);
 	int getSize();
+
 
 };
 

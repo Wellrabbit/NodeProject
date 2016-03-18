@@ -21,6 +21,7 @@ public:
 	void setValue(const Type& value);
 	Node * getPointers();
 
+
 };
 
 #endif /* NODEMODEL_NODE_H_ */

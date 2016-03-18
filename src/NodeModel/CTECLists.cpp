@@ -25,8 +25,8 @@ CTECLists<Type>::~CTECLists()
 template<class Type>
 void CTECLists<Type>::addAtIndex(int index, const Type& value)
 {
-	assert(size > 0);
-	assert(index > 0);
+	assert(size >= 0);
+	assert(index >= 0);
 	assert(index < size);
 
 	ArrayNode<Type> * currentSpot = head;
@@ -57,7 +57,7 @@ void CTECLists<Type>::addAtIndex(int index, const Type& value)
 template<class Type>
 void CTECLists<Type>::addToEnd(const Type& value)
 {
-	assert(size > 0);
+	assert(size >= 0);
 
 	ArrayNode<Type> * newEnd = new ArrayNode<Type>(value);
 	ArrayNode<Type> * currentSpot = end;
@@ -249,4 +249,4 @@ int CTECLists<Type>::getSize()
 
 
 
-}
+

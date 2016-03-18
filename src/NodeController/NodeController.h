@@ -16,6 +16,8 @@
 #include "../NodeModel/Timer.h"
 #include "CTECArray.h"
 #include "CTECArray.cpp"
+#include "../NodeModel/CTECLists.h"
+#include "../NodeModel/CTECLists.cpp"
 using namespace std;
 
 class NodeController {
@@ -26,10 +28,12 @@ private:
 	//ArrayNode<string> otherArrayNode;
 	CTECArray<int> * notHipsterEnough;
 	Timer arrayTimer;
+	CTECLists<int> * numbers;
 public:
 	NodeController();
 	virtual ~NodeController();
 	void start();
+	void testLists();
 };
 
 #endif /* NODECONTROLLER_NODECONTROLLER_H_ */
